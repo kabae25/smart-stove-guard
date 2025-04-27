@@ -4772,16 +4772,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 116.84) (xy 77.47 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b19e13c-10df-4df5-8b1a-788113be0ac6")
-	)
-	(wire
-		(pts
 			(xy 119.38 77.47) (xy 123.19 77.47)
 		)
 		(stroke
@@ -5029,6 +5019,16 @@
 			(type default)
 		)
 		(uuid "8d08cd5d-24d4-402f-90c0-52264ef2f03c")
+	)
+	(wire
+		(pts
+			(xy 74.93 116.84) (xy 77.47 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91f7ddaa-0b65-4219-a896-362cb1745b16")
 	)
 	(wire
 		(pts
@@ -8051,7 +8051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_HandSolder"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_HandSolder"
 			(at 39.0652 50.8 0)
 			(effects
 				(font
@@ -10961,7 +10961,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_HandSolder"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_HandSolder"
 			(at 68.2752 50.8 0)
 			(effects
 				(font
