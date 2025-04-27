@@ -1,0 +1,22 @@
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-F_Cu.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-B_Cu.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-F_Paste.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-B_Paste.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-F_Mask.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-B_Mask.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\smart_stove_guard-job.gbrjob'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-F_Cu.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-B_Cu.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-F_Paste.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-B_Paste.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-F_Mask.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-B_Mask.gbr'.
+Plotted to 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\Evan\Documents\Github\smart-stove-guard\hardware\smart_stove_guard\gerber1\smart_stove_guard-job.gbrjob'.
+Info: Done.
+Info: Done.
