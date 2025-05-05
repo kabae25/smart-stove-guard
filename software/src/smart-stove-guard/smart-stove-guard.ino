@@ -72,7 +72,7 @@ void initBS412() {
 
 
 
-  Serial.print("")
+  Serial.print("");
 }
 
 
