@@ -162,8 +162,6 @@ inline void StateMachine::handleActiveWaiting(void)
         led.setLow();
         current_state = SYS_TEMP_READING;
     }
-    Serial.println(timeoutcheck - millis());
-    delay(100);
 }
 
 inline void StateMachine::handleTempReading(void)
@@ -172,13 +170,13 @@ inline void StateMachine::handleTempReading(void)
     average_temp = temp.buildTempReading(60, true); // Take the temperature 60 times and print debug messages
     Serial.println("Entering Cooldown State");
 
-    if (average_temp <= 100) {
+    if (average_temp <= 30) {
         Blynk.virtualWrite(V1, "Idle: Waiting for motion...");
         current_state = SYS_IDLE;
         return;
     }
 
-    Blynk.virtualWrite(V1, "Stove is hot! Waiting for 1 minute for cooldown");
+    Blynk.virtualWrite(V1, "Stove is hot! Waiting 2 min for cooldown");
     current_state = SYS_COOLDOWN; // Wait for the stove to cool down
 }
 
@@ -192,7 +190,7 @@ inline void StateMachine::handleCooldown() {
     }
   
     // 2) Still counting down?
-    if (millis() - cooldownStart < 1UL*60*1000) {
+    if (millis() - cooldownStart < 2UL*60*1000) {
       // not yet expired — return immediately (no blocking)
       return;
     }
@@ -204,19 +202,14 @@ inline void StateMachine::handleCooldown() {
 
 void StateMachine::finishCooldownCheck() {
     new_average_temp = temp.buildTempReading(60, true);
-  
-    if (new_average_temp < 50) {                // Already cool
-      Serial.println("False Alarm: Stove already Cool!");
-      current_state = SYS_IDLE;
-      return;
-    }
       
-    if (abs(new_average_temp - average_temp) <= 20) {
+    if ((new_average_temp - average_temp) > -2) {
       Serial.println("Temperature Delta Detected, Alarming!");
       Blynk.virtualWrite(V1, "ALERT! STOVE LEFT ON!");
       current_state = SYS_ALARMING;
       Blynk.logEvent("stove_alert");
-    } else {
+    } 
+    else {
       Blynk.virtualWrite(V1, "Idle: Waiting for motion...");
       Serial.println("Stove cooled down.");
       current_state = SYS_IDLE;
@@ -249,7 +242,8 @@ inline void StateMachine::handleAlarming(void)
  */
 void StateMachine::periodicTemperature(void) {
     if (getSendMsg()) {
-        Blynk.virtualWrite(V0, getTempQuick());
+        float temp = getTempQuick();
+        Blynk.virtualWrite(V0, temp);
         Serial.println("Send Periodic Temperature Update");
     }
 }

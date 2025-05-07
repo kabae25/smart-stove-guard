@@ -7,7 +7,7 @@
 #define MLX_ADDR 0x5A
 #define REG_OBJECT_TEMP 0x07
 
-#define EMA_MULTIPLIER 0.7
+#define EMA_MULTIPLIER 0.8
 
 class TempSensor {
     private:
