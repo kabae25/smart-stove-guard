@@ -1,7 +1,7 @@
 #pragma once
 #include "Arduino.h"
 
-#define MOTION_PIN 1
+#define MOTION_PIN 4
 
 class MotionSensor {
     private:

@@ -75,10 +75,10 @@ void TempSensor::init() { // Initialize the MLX90614
   }
 
   float TempSensor::buildTempReading(int num_iters = 60, bool debug = true) {
-    float ema_temp = getTemp(debug);
+    float ema_temp = getTemp(false);
     int sample_cnt = 0;
     while (sample_cnt < num_iters) {
-      ema_temp = (getTemp(debug) * EMA_MULTIPLIER) + (ema_temp * (1 - EMA_MULTIPLIER)); // Build exponential moving average
+      ema_temp = (getTemp(false) * EMA_MULTIPLIER) + (ema_temp * (1 - EMA_MULTIPLIER)); // Build exponential moving average
       sample_cnt++;
       delay(100); // Give the MLX90614 a little time to breath
     }
